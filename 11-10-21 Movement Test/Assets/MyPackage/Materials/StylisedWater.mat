@@ -86,13 +86,13 @@ Material:
     - _EnvironmentReflections: 1
     - _FlowSpeed: 95.05
     - _FlowStrength: 50.61
-    - _FoamDistance: 0.12
+    - _FoamDistance: 0.24
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.95
+    - _Opacity: 0.71
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Size: 3
