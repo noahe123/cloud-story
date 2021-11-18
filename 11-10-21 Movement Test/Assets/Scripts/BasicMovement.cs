@@ -11,6 +11,7 @@ public class BasicMovement : MonoBehaviour
     public Rigidbody rb;
 
     Vector3 movement;
+    Vector3 localPositionOffset;
 
     // Update is called once per frame
     void Update()
@@ -30,6 +31,12 @@ public class BasicMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        localPositionOffset = movement * moveSpeed * Time.fixedDeltaTime;
+        //Vector3 newPosition = rb.position + transform.TransformDirection(localPositionOffset);
+        //rb.MovePosition(newPosition);
+        localPositionOffset.z *= -1;
+
+       rb.MovePosition(rb.position + transform.TransformVector( localPositionOffset) );
     }
 }
