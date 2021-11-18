@@ -35,6 +35,10 @@ public class DialogueManager : MonoBehaviour
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
 
+    //sound effects
+    [SerializeField] private AudioSource dialogueSound;
+
+
     private void Awake() 
     {
         if (instance != null)
@@ -142,6 +146,11 @@ public class DialogueManager : MonoBehaviour
         // display each letter one at a time
         foreach (char letter in line.ToCharArray())
         {
+            //play sound
+            float randPitch = Random.Range(.98f, 1.02f);
+            dialogueSound.pitch = randPitch;
+            dialogueSound.Play();
+
             // if the submit button is pressed, finish up displaying the line right away
             if (InputManager.GetInstance().GetSubmitPressed()) 
             {
