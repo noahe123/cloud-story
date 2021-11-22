@@ -13,6 +13,9 @@ public class BasicMovement : MonoBehaviour
     Vector3 movement;
     Vector3 localPositionOffset;
 
+    bool audioIsPlaying = false;
+
+
     // Update is called once per frame
     void Update()
     {
@@ -38,5 +41,72 @@ public class BasicMovement : MonoBehaviour
         localPositionOffset.z *= -1;
 
        rb.MovePosition(rb.position + transform.TransformVector( localPositionOffset) );
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (movement != Vector3.zero)
+        {
+            if (audioIsPlaying == false)
+            {
+                if (collision.gameObject.name == "sand")
+                {
+                    audioIsPlaying = true;
+                    GetComponent<SAudioManager>().Play("sand");
+                }
+                else if (collision.gameObject.name == "wood")
+                {
+                    audioIsPlaying = true;
+                    GetComponent<SAudioManager>().Play("wood");
+                }
+                else if(collision.gameObject.name == "grass")
+                {
+                    audioIsPlaying = true;
+                    GetComponent<SAudioManager>().Play("grass");
+                }
+            }
+        }
+        else
+        {
+            if (audioIsPlaying)
+            {
+                if (collision.gameObject.name == "sand")
+                {
+                    audioIsPlaying = false;
+                    GetComponent<SAudioManager>().Stop("sand");
+                }
+                else if (collision.gameObject.name == "wood")
+                {
+                    audioIsPlaying = false;
+                    GetComponent<SAudioManager>().Stop("wood");
+                }
+                else if (collision.gameObject.name == "grass")
+                {
+                    audioIsPlaying = false;
+                    GetComponent<SAudioManager>().Stop("grass");
+                }
+            }
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (audioIsPlaying)
+        {
+            if (collision.gameObject.name == "sand")
+            {
+                audioIsPlaying = false;
+                GetComponent<SAudioManager>().Stop("sand");
+            }
+            else if (collision.gameObject.name == "wood")
+            {
+                audioIsPlaying = false;
+                GetComponent<SAudioManager>().Stop("wood");
+            }
+            else if (collision.gameObject.name == "grass")
+            {
+                audioIsPlaying = false;
+                GetComponent<SAudioManager>().Stop("grass");
+            }
+        }
     }
 }

@@ -15,12 +15,27 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ev6400.png.001
+    second: {fileID: 2100000, guid: aa25ee825df46b44b8144f73e4d8c2cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ev6400b.png
     second: {fileID: 2100000, guid: ab1f541d97b7b6a4383ab1f4bac66faa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ev6400b.png.001
+    second: {fileID: 2100000, guid: ab1f541d97b7b6a4383ab1f4bac66faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: s3_ev6401.png
+    second: {fileID: 2100000, guid: a49e3eced9513d7429f926ab4aab3ca0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: s3_ev6401.png.001
     second: {fileID: 2100000, guid: a49e3eced9513d7429f926ab4aab3ca0, type: 2}
   materials:
     materialImportMode: 2
