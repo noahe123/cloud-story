@@ -15,6 +15,41 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2.003
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2.006
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2.007
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2.008
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2.011
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 2.012
+    second: {fileID: 2100000, guid: 29c221a9faf6dbf42ab77f702620be1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Beach Sprites.001
     second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
