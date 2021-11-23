@@ -15,7 +15,6 @@ public class BasicMovement : MonoBehaviour
 
     bool audioIsPlaying = false;
 
-
     // Update is called once per frame
     void Update()
     {
