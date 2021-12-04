@@ -220,6 +220,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Building Interior 1.002
+    second: {fileID: 2100000, guid: 32ecc832668f20648b62c5db05e958ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building Interior 1.005
+    second: {fileID: 2100000, guid: 32ecc832668f20648b62c5db05e958ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building Interior 1.006
+    second: {fileID: 2100000, guid: 32ecc832668f20648b62c5db05e958ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ev6400.png
     second: {fileID: 2100000, guid: aa25ee825df46b44b8144f73e4d8c2cc, type: 2}
   - first:
