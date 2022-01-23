@@ -81,6 +81,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - PixelSnap: 0
+    - Vector1_029920d8d4294dbb99b3f3d59cbe5913: 0.1
+    - Vector1_9faa1de937a14aa3a256b5e68b0b65bc: 0.6
     - _BumpScale: 1
     - _Choppiness: 0.01
     - _Cutoff: 0.496
@@ -105,11 +107,14 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - Vector2_a670837419844f1d9389234cb11e3a10: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_df8b92ac51a340bdb8ca0d8384d0a495: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_fc787a5de78841cebad72321f2437cf9: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DarkFoamColor: {r: 0.1812392, g: 0.5608159, b: 0.872, a: 1}
     - _EmissionColor: {r: 0.0007314645, g: 0.0007314645, b: 0.0007314645, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _LightFoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0.2078431, g: 0.6431373, b: 1, a: 1}
+    - _WaterColor: {r: 0, g: 0.8235294, b: 1, a: 1}
   m_BuildTextureStacks: []
