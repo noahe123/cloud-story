@@ -13,6 +13,8 @@ public class ShaderOccurenceWindow : EditorWindow
 
     Shader shader;
     Shader shader2;
+    string path = null;
+
     List<string> materials = new List<string>();
     Vector2 scroll;
 
@@ -21,8 +23,11 @@ public class ShaderOccurenceWindow : EditorWindow
         Shader prev = shader;
         shader = EditorGUILayout.ObjectField(shader, typeof(Shader), false) as Shader;
         shader2 = EditorGUILayout.ObjectField(shader2, typeof(Shader), false) as Shader;
-        string[] allMaterials = AssetDatabase.FindAssets("t:Material");
-        var material = AssetDatabase.LoadAssetAtPath<Material>(allMaterials[i]);
+        path = EditorGUILayout.TextField(path);
+
+        string[] allMaterials = AssetDatabase.FindAssets("t:Material", new[] { path });
+        Material material = null;
+
 
         if (shader != prev)
         {
@@ -32,6 +37,7 @@ public class ShaderOccurenceWindow : EditorWindow
             {
                 allMaterials[i] = AssetDatabase.GUIDToAssetPath(allMaterials[i]);
                 string[] dep = AssetDatabase.GetDependencies(allMaterials[i]);
+                material = AssetDatabase.LoadAssetAtPath<Material>(allMaterials[i]);
                 /*if (ArrayUtility.Contains(dep, shaderPath))
                     materials.Add(allMaterials[i]);*/
                 GUILayout.BeginHorizontal();
@@ -71,7 +77,13 @@ public class ShaderOccurenceWindow : EditorWindow
         {
             for (int i = 0; i < allMaterials.Length; i++)
             {
-                material.shader = shader2;
+                allMaterials[i] = AssetDatabase.GUIDToAssetPath(allMaterials[i]);
+                string[] dep = AssetDatabase.GetDependencies(allMaterials[i]);
+                material = AssetDatabase.LoadAssetAtPath<Material>(allMaterials[i]);
+                if (material.shader == shader || shader == null)
+                {
+                    material.shader = shader2;
+                }
             }
         }
 
