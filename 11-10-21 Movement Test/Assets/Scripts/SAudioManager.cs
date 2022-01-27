@@ -8,7 +8,7 @@ using UnityEngine;
 public partial class SAudioManager : MonoBehaviour
 {
 
-    public Sound[] sounds;
+    public MySound[] sounds;
 
     public static SAudioManager instance;
     //AudioManager
@@ -26,7 +26,7 @@ public partial class SAudioManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        foreach (Sound s in sounds)
+        foreach (MySound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -45,7 +45,7 @@ public partial class SAudioManager : MonoBehaviour
 
     public void Play(string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
+        MySound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " not found");
@@ -58,7 +58,7 @@ public partial class SAudioManager : MonoBehaviour
     //this addition to the code was made by me, the rest was from Brackeys tutorial
     public void Stop(string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
+        MySound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Stop();
     }
 }
