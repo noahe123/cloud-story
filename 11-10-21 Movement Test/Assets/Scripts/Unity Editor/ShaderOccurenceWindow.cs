@@ -40,6 +40,7 @@ public class ShaderOccurenceWindow : EditorWindow
                 material = AssetDatabase.LoadAssetAtPath<Material>(allMaterials[i]);
                 /*if (ArrayUtility.Contains(dep, shaderPath))
                     materials.Add(allMaterials[i]);*/
+
                 GUILayout.BeginHorizontal();
                 {
                     //GUILayout.Label(Path.GetFileNameWithoutExtension(materials[i]));
