@@ -120,6 +120,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Beach Sprites Set 3
+    second: {fileID: 2100000, guid: 31969405c8c98a040890b08af59f3043, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Beach Sprites.001
     second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
@@ -146,32 +151,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Beach Sprites.010
-    second: {fileID: 2100000, guid: dd8bfb9d6c554d94490470575a2cb7fc, type: 2}
+    second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Beach Sprites.012
-    second: {fileID: 2100000, guid: a6e058530b78cd6479ec331996937c39, type: 2}
+    second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Beach Sprites.014
-    second: {fileID: 2100000, guid: 6bedcd254ca9a964e9e4390ef092127e, type: 2}
+    second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Beach Sprites.016
-    second: {fileID: 2100000, guid: b7d9e8443e0fb4b4783af4db826ecbf1, type: 2}
+    second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Beach Sprites.018
-    second: {fileID: 2100000, guid: e0b730e9ccc29a44198574410c90f2b3, type: 2}
+    second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Beach Sprites.020
-    second: {fileID: 2100000, guid: 6acd37643f81b764ba8922bb1a7e8c46, type: 2}
+    second: {fileID: 2100000, guid: c5531dac2161e1d408852a1d05d54417, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
