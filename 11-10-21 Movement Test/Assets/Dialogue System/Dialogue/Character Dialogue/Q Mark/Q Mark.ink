@@ -1,16 +1,11 @@
-Hello?
+?????HFHSGFSHFGSKFKHG
 -> main
 
 === main ===
-Is my name Q. Mark?
+Am I cool?
 + [Yes]
-    That was a rhetorical question, no?
+    That was a rhetorical question.
 + [No]
-    That was a rhetorical question, no?
-    
-- Do you have any questions?
-+ [Yes]
-    -> main
-+ [No]
-    Goodbye then!
+    That was a rhetorical question.
+- Of course I'm cool.
     -> END
