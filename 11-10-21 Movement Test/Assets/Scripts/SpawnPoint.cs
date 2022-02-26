@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class SpawnPoint : MonoBehaviour
 {
@@ -16,7 +17,14 @@ public class SpawnPoint : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = transform.position;
         player.transform.rotation = Quaternion.identity;
-        player.transform.Rotate(0, 180, 0);
+        if (SceneManager.GetActiveScene().name != "Hub")
+        {
+            player.transform.Rotate(0, 180, 0);
+        }
+        else
+        {
+            player.transform.Rotate(0, -90, 0);
+        }
         player.GetComponent<SAudioManager>().Stop("sand");
         player.GetComponent<SAudioManager>().Stop("grass");
         player.GetComponent<SAudioManager>().Stop("wood");
