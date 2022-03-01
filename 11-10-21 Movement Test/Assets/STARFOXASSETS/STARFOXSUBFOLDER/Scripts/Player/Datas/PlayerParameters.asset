@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerParameters
   m_EditorClassIdentifier: 
   physicMovement: 0
-  trackSpeed: 40
-  allRangeSpeed: 40
+  trackSpeed: 18
+  allRangeSpeed: 18
   smoothAllRangeMovement: 0.1
   localSpeed: 20
   smoothLocalSpeed: 0.2
@@ -41,7 +41,7 @@ MonoBehaviour:
   lifeAmount: 100
   buffAmount: 100
   numLifes: 1
-  numSmartBombs: 2
+  numSmartBombs: 3
   numGoldRings: 0
   isDamageEffect: 0
   shipState: 1
