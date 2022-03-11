@@ -4783,8 +4783,8 @@ MonoBehaviour:
     atlasWidth: 1024
     atlasHeight: 1024
     characterSetSelectionMode: 6
-    characterSequence: 20-7E,A0-FF,2000-200F,2012-2022,2026,202A-2030,2032-2034,2039-203A,203C,203E,2044,205E,206A-206F,20AC,2122,25A1
-    referencedFontAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    characterSequence: 20-7E,A0-AC,AE-FF
+    referencedFontAssetGUID: 54130a3fae395b041adb09f69d19078b
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0

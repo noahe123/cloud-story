@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TrailMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: d92098f9042729c45a1fe18f9b9c9e5d,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d92098f9042729c45a1fe18f9b9c9e5d, type: 3}
   m_ShaderKeywords: _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -129,7 +128,7 @@ Material:
     m_Floats:
     - Vector1_1FC2117C: 1.33
     - Vector1_253D52CD: 1
-    - Vector1_2666BE54: 1
+    - Vector1_2666BE54: 0.322
     - Vector1_C93CA28E: 1
     - Vector1_D3C36010: 0.1
     - Vector1_EC469793: 0.424
@@ -260,8 +259,8 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - Color_2EB51AEF: {r: 0, g: 0.007843138, b: 0.7490196, a: 0}
-    - Color_E15FE7B7: {r: 40.156864, g: 40.156864, b: 766.9961, a: 1}
-    - Color_FEA0CC37: {r: 383.49805, g: 20.078432, b: 20.078432, a: 1}
+    - Color_E15FE7B7: {r: 0, g: 0, b: 57.96228, a: 0.25490198}
+    - Color_FEA0CC37: {r: 19.32074, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0.19607843}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 724.07733}

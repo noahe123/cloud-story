@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SmartBombTrailMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: d92098f9042729c45a1fe18f9b9c9e5d,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d92098f9042729c45a1fe18f9b9c9e5d, type: 3}
   m_ShaderKeywords: _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -128,10 +127,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_1FC2117C: 1.33
-    - Vector1_253D52CD: 0
+    - Vector1_253D52CD: 0.128
     - Vector1_2666BE54: 0.01
     - Vector1_C93CA28E: 2
-    - Vector1_D3C36010: 2
+    - Vector1_D3C36010: 0.57
     - Vector1_EC469793: 0.424
     - _AORemapMax: 1
     - _AORemapMin: 0

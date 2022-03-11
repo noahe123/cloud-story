@@ -32,4 +32,5 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/STARFOXASSETS/STARFOXSUBFOLDER/Scenes/TestScene.unity
     guid: 65dde6729d11bba4487aec47927e5287
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 5e345be22a9acfe45a82df41248cb30f, type: 2}
