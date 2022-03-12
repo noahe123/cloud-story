@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerParameters
   m_EditorClassIdentifier: 
   physicMovement: 0
-  trackSpeed: 18
-  allRangeSpeed: 18
+  trackSpeed: 60
+  allRangeSpeed: 60
   smoothAllRangeMovement: 0.1
   localSpeed: 20
   smoothLocalSpeed: 0.2
