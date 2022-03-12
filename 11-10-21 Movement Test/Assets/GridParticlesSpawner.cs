@@ -9,11 +9,13 @@ public class GridParticlesSpawner : MonoBehaviour
     public GameObject gridObj;
     int numGridsSpawned = 1;
     Vector3 childSpawnPositionOffset;
+    float scaleFactor;
 
     // Start is called before the first frame update
     void Start()
     {
-        childSpawnPositionOffset = transform.GetChild(1).transform.position;
+        scaleFactor = transform.localScale.x;
+        childSpawnPositionOffset = transform.GetChild(2).transform.position;
         gameplayObj = GameObject.Find("Gameplay");
         planeStartPos = gameplayObj.transform.position;
     }
@@ -23,11 +25,16 @@ public class GridParticlesSpawner : MonoBehaviour
     {
         float planeZPos = gameplayObj.transform.position.z;
         float planeZStartPos = planeStartPos.z;
-        int gridSpawnOffset = 80 * numGridsSpawned;
+        float gridSpawnOffset = 80 * scaleFactor * numGridsSpawned;
         if (planeZPos > planeZStartPos + gridSpawnOffset)
         {
-            Instantiate(gridObj, childSpawnPositionOffset + new Vector3(0, 0, gridSpawnOffset), Quaternion.identity);
+            
+            GameObject spawnedGrid = Instantiate(gridObj, Vector3.zero, Quaternion.identity);
+            spawnedGrid.transform.parent = transform;
+            spawnedGrid.transform.localScale = Vector3.one;
+            spawnedGrid.transform.position = childSpawnPositionOffset + new Vector3(0, 0, gridSpawnOffset);
             numGridsSpawned++;
+            Destroy(transform.GetChild(0).gameObject);
         }
     }
 }

@@ -32,5 +32,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/STARFOXASSETS/STARFOXSUBFOLDER/Scenes/TestScene.unity
     guid: 65dde6729d11bba4487aec47927e5287
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b01a185b42da47640bb808e4611a298b
+  - enabled: 1
+    path: Assets/Scenes/Battle Test.unity
+    guid: b0de3beb0e7d89e43853702f970a4191
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 5e345be22a9acfe45a82df41248cb30f, type: 2}
