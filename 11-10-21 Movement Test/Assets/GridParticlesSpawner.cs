@@ -6,7 +6,7 @@ public class GridParticlesSpawner : MonoBehaviour
 {
     Vector3 planeStartPos;
     GameObject gameplayObj;
-    public GameObject gridObj;
+    //public GameObject gridObj;
     int numGridsSpawned = 1;
     Vector3 childSpawnPositionOffset;
     float scaleFactor;
@@ -28,13 +28,10 @@ public class GridParticlesSpawner : MonoBehaviour
         float gridSpawnOffset = 80 * scaleFactor * numGridsSpawned;
         if (planeZPos > planeZStartPos + gridSpawnOffset)
         {
-            
-            GameObject spawnedGrid = Instantiate(gridObj, Vector3.zero, Quaternion.identity);
-            spawnedGrid.transform.parent = transform;
-            spawnedGrid.transform.localScale = Vector3.one;
-            spawnedGrid.transform.position = childSpawnPositionOffset + new Vector3(0, 0, gridSpawnOffset);
+            Transform myChild = transform.GetChild(0);
+            myChild.SetSiblingIndex(2);
+            myChild.position = childSpawnPositionOffset + new Vector3(0, 0, gridSpawnOffset);
             numGridsSpawned++;
-            Destroy(transform.GetChild(0).gameObject);
         }
     }
 }

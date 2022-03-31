@@ -30,6 +30,7 @@ public class PlayerScore : MonoBehaviour
 
     void UpdateScore()
     {
+        //the most important part of the day
         int maxScaleSize = 3;
         float timeScale = .1f;
 
@@ -40,9 +41,15 @@ public class PlayerScore : MonoBehaviour
             if (digit == int.Parse(textDigits[digitIndex].text))
                 continue;
 
+            //try to find the middle values and store them in a new movement vector
+
             textDigits[digitIndex].text = digit.ToString();
             textDigits[digitIndex].transform.localScale = Vector3.one * maxScaleSize;
             textDigits[digitIndex].transform.DOScale(Vector3.one, timeScale);
+
+            //transform the values and put them into a new vector3
+
+
         }
     }
 }
