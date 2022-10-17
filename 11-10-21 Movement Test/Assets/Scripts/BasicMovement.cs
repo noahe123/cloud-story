@@ -15,6 +15,10 @@ public class BasicMovement : MonoBehaviour
 
     bool audioIsPlaying = false;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     // Update is called once per frame
     void Update()
     {
